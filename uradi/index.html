@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student-Industry Experience Platform</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <!-- Left Section -->
+        <div class="left-section">
+            <h1>Graduate with Real-World Experience</h1>
+            <p>Prepare yourself for the professional world by connecting with businesses and internships before graduation.</p>
+            <button id="loginBtn" class="btn">Log In</button>
+            <button id="signupBtn" class="btn">Sign Up</button>
+        </div>
+
+        <!-- Right Section -->
+        <div class="right-section">
+            <!-- Image when no form is active -->
+            <img id="placeholderImage" src="ulf_logo2.png" alt="Placeholder Image" class="placeholder-image">
+            
+            <!-- Forms -->
+            <div class="forms">
+                <form id="loginForm" class="form" style="display:none;">
+                    <h2>Login</h2>
+                    <input type="text" placeholder="Email" required>
+                    <input type="password" placeholder="Password" required>
+                    <button type="submit">Log In</button>
+                </form>
+
+                <form id="signupForm" class="form" style="display:none;">
+                    <h2>Sign Up</h2>
+                    <select id="userType">
+                        <option value="student">Student</option>
+                        <option value="company">Company</option>
+                    </select>
+                    <div id="studentFields">
+                        <input type="text" placeholder="Name" required>
+                        <input type="text" placeholder="University" required>
+                    </div>
+                    <div id="companyFields" style="display:none;">
+                        <input type="text" placeholder="Company Name" required>
+                        <input type="text" placeholder="Industry" required>
+                    </div>
+                    <input type="email" placeholder="Email" required>
+                    <input type="password" placeholder="Password" required>
+                    <button type="submit">Sign Up</button>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <script src="scripts.js"></script>
+</body>
+</html>

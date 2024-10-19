@@ -1,0 +1,206 @@
+/* General Styles */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #362b06;
+    /*background-image: url('homepage.jpg');*/
+    background-size: cover; /* Make sure the image covers the whole container */
+    background-position: center;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+    max-width: 1200px;
+    background-color: #362b06;
+    padding: 0px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+}
+
+/* Left Section (Text and Buttons) */
+.left-section {
+    width: 50%;
+    padding: 2px;
+    margin: 150px;
+}
+
+.left-section h1 {
+    font-size: 2.5em;
+    color: #d8a006;
+    text-align: end;
+}
+
+.left-section p {
+    font-size: 1.2em;
+    margin: 20px 0;
+    color: #d8a006;
+    text-align: end;
+}
+
+.left-section .btn {
+    padding: 15px 30px;
+    background-color: #d8a006;
+    color: #362b06;
+    border: none;
+    border-radius: 15px;
+    cursor: pointer;
+    margin: 5px;
+    font-size: 1.1em;
+    transition: background-color 0.3s;
+}
+
+.left-section .btn:hover {
+    background-color: #362b06;
+    color: #d8a006;
+    border: #d8a006 2px solid;
+}
+
+
+
+/* Right Section (Forms) */
+.right-section {
+    width: 50%;
+    padding: 2px;
+    margin: 150px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+.placeholder-image {
+    width: 100%;
+    height: auto;
+    max-width: 400px;
+    display: block;
+    border-radius: 15px;
+}
+
+.forms {
+    width: 100%;
+    max-width: 400px;
+}
+
+.form {
+    display: none;
+    flex-direction: column;
+    width: 100%;
+}
+
+.form input, .form select {
+    padding: 12px;
+    margin: 10px 0;
+    width: 100%;
+    border: 1px solid #ccc;
+    border-radius: 15px;
+}
+
+.form button {
+    padding: 15px;
+    background-color: #d8a006;
+    color: white;
+    border: none;
+    border-radius: 15px;
+    cursor: pointer;
+}
+
+.form button:hover {
+    background-color: #362b06;
+    color: #d8a006;
+    border: #d8a006 2px solid;
+}
+
+/* Responsiveness */
+@media (max-width: 768px) {
+    .container {
+        flex-direction: column;
+        width: 95%;
+    }
+
+    .left-section, .right-section {
+        width: 100%;
+    }
+}
+
+/*sidebar styling*/
+/* General Styles */
+.sidebar {
+    width: 250px;
+    background-color: #181201;
+    color: rgb(233, 165, 19);
+    position: fixed;
+    height: 100%;
+    padding-top: 0px;
+}
+
+.sidebar ul {
+    list-style: none;
+    padding: 0;
+}
+
+.sidebar ul li {
+    padding: 15px;
+    font-size: 18px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+}
+
+.sidebar ul li i {
+    margin-right: 10px;
+}
+
+.sidebar ul li:hover {
+    background-color: #575757;
+}
+
+/* Main content */
+.dashboard-container {
+    display: flex;
+}
+
+main {
+    margin-left: 250px;
+    padding: 20px;
+    width: 100%;
+}
+
+.filters {
+    margin-bottom: 20px;
+}
+
+.job-listings {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.job-listing {
+    background-color: #fff;
+    padding: 15px;
+    margin: 10px;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    flex: 1 0 45%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.job-listing button {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+}
+
+.job-listing button:hover {
+    background-color: #45a049;
+}

@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Job Listings</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+
+</head>
+<body>
+    <div class="dashboard-container">
+        <!-- Sidebar -->
+        <aside class="sidebar">
+            <ul>
+                <li><i class="fa fa-home"></i><a href="dashboard.html">Dashboard</a></li>
+                <li><i class="fa fa-briefcase"><a href="listing.html">Listings</a></i></li>
+                <li><i class="fa fa-file-alt"></i> Applications</li>
+                <li><i class="fa fa-sign-out-alt"></i><a href="index.html">Log Out</a></li>
+            </ul>
+        </aside>
+
+        <!-- Main Content -->
+        <main>
+            <h2>Job Listings</h2>
+            <div class="job-listings">
+                <!-- List of jobs -->
+                <div class="job-listing">
+                    <p>Software Engineer - Tech Industry</p>
+                    <button onclick="window.location.href='job-details.html'">More</button>
+                </div>
+                <div class="job-listing">
+                    <p>Graphic Designer - Design Industry</p>
+                    <button onclick="window.location.href='job-details.html'">More</button>
+                </div>
+                <!-- Add more job listings dynamically -->
+            </div>
+        </main>
+    </div>
+
+    <script src="scripts.js"></script>
+</body>
+</html>
